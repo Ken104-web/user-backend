@@ -14,7 +14,7 @@ async function  main() {
     const app = express()
 
     app.use(
-        "/graphql",
+        "/user",
         graphqlHTTP({
             schema: schema,
             graphiql: true
