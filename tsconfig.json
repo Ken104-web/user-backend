@@ -13,6 +13,7 @@
       "declarationDir": "dist/types",
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
-    }
+    },
+    "exclude": ["node_modules"]
 
 }
