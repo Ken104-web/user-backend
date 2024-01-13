@@ -21,14 +21,16 @@ export class UsersResolver {
     }
 
     @Mutation(() => User)
-    async createUser(@Arg('input') input: UserInput) : Promise<User> {
+    async createUser(@Arg("input") input: UserInput): Promise<User> {
         const user = {
             id: this.users.length + 1,
             ...input,
         }
+        
         this.users.push(user)
         return user
     }
+    
     @Mutation(() => User)
     async updateUser(
         @Arg("id") id: number,
