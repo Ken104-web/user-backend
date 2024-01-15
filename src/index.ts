@@ -23,7 +23,8 @@ async function  main() {
 
     app.listen(8000)
 
-    console.log("Plz bro run server at http://localhost:8000/graphql")
+    // npx ts-node --transpile-only index.ts
+    console.log("Plz bro run server at http://localhost:8000/user")
     
 }
 main()
